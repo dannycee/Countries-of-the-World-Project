@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a403273251.js"
+      crossorigin="anonymous"></script>
+    <title>Countries of the world</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="flag-container">
+        <div class="buttons">
+          <button class="btn-left">
+            <i class="fa-solid fa-chevron-left fa-4x"></i>
+          </button>
+          <button class="btn-right">
+            <i class="fa-solid fa-chevron-right fa-4x"></i>
+          </button>
+        </div>
+        <div class="country">
+          <!-- Tutaj umieść kod flagi -->
+        </div>
+      </div>
+      <h1 class="neighbours-title">Neighbours</h1>
+      <div class="neighbours-container">
+        <div class="neibhgours-grid">
+          <div class="neighbours">
+            <img src="union-jack.png" alt="" class="neighbour-flag" />
+            <h4 class="neighbour-name">Ireland</h4>
+          </div>
+          <div class="neighbours">
+            <img src="union-jack.png" alt="" class="neighbour-flag" />
+            <h4 class="neighbour-name">Ireland</h4>
+          </div>
+          <!-- <div class="neighbours">
+           <h4 class="neighbour-name">Country has no neighbours.</h4>
+        </div> -->
+        </div>
+      </div>
+      <div class="container-button">
+        <!-- https://www.w3schools.com/html/html_form_elements.asp -->
+        <!-- <form>
+        <label for="continent">Continent:</label>
+        <select id="continent" name="continent" size="1">
+          <option value="europe">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="africa">Africa</option>
+          <option value="americas">Americas</option>
+          <option value="oceania">Ocenia</option>
+        </select>
+        <input type="submit" />
+      </form> -->
+        <div class="mydict">
+          <div>
+            <label>
+              <input type="radio" name="radio" value="europe" checked="" />
+              <span>Europe</span>
+            </label>
+            <label>
+              <input type="radio" name="radio" value="asia" />
+              <span>Asia</span>
+            </label>
+            <label>
+              <input type="radio" name="radio" value="americas" />
+              <span>Americas</span>
+            </label>
+            <label>
+              <input type="radio" name="radio" value="africa" />
+              <span>Africa</span>
+            </label>
+            <label>
+              <input type="radio" name="radio" value="oceania" />
+              <span>Oceania</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

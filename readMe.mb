@@ -1,0 +1,38 @@
+# Countries of the World Project
+
+## Description
+
+The **Countries of the World** project is a web application that provides information about countries around the world. It allows users to navigate through different regions, view details about each country, and see their neighboring countries. The project utilizes HTML, CSS, and JavaScript to create an interactive and informative user experience.
+
+## Features
+
+- Fetches data from the REST Countries API to display information about countries.
+- Allows users to navigate through different regions and view details about countries in each region.
+- Displays flags, names, capitals, populations, areas, languages, and currencies of countries.
+- Shows neighboring countries for each selected country.
+- Provides a responsive design for various screen sizes.
+
+## Usage
+
+1. Clone the repository or download the project files.
+2. Open the `index.html` file in a web browser.
+
+## Code Structure
+
+- HTML file: `index.html`
+- CSS file: `style.css`
+- JavaScript file: `script.js`
+
+## How it Works
+
+- The project uses the Fetch API to retrieve data from the REST Countries API.
+- It dynamically creates HTML elements to display country information based on the API response.
+- JavaScript handles the logic for fetching data, rendering country details, and managing user interactions.
+- CSS is used for styling the layout, colors, and responsiveness of the application.
+
+## Credits
+
+- Country data fetched from the [REST Countries API](https://restcountries.com/).
+- Flags and other country-related images obtained from the API responses.
+- Fonts used from [Font Awesome](https://fontawesome.com/) for icons.
+- Project inspired by the one of the examples in Udemy course The Complete JavaScript Course 2024: From Zero to Expert! made by Jonas Schmedtmann. 

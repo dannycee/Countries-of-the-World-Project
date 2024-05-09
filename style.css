@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+html {
+  font-size: 62.5%;
+  color: #;
+}
+
+.container {
+  max-width: 140rem;
+  background-color: #eaf4f4;
+  margin: 10rem auto;
+  border-radius: 2rem;
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  position: relative;
+}
+
+.btn-left,
+.btn-right {
+  position: absolute;
+  top: 20rem;
+  transform: translateY(-50%);
+}
+
+.btn-left {
+  left: 0;
+}
+
+.btn-right {
+  right: 0;
+}
+
+.fa-solid {
+  color: #5e6262;
+  padding: 1rem;
+  color: #fff;
+  border-color: #fff;
+  background-color: #eaf4f4;
+}
+
+.country {
+  padding: 5rem;
+  background-color: #f6fff8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.country,
+.neighbours-container {
+  transition: opacity 0.3s ease-in-out; /* Efekt przejścia dla opacity */
+}
+
+/* Dodatkowo, dla .neighbours-container można również dodać transition dla max-height */
+.neighbours-container {
+  max-height: 0; /* Rozpoczynamy od ukrycia kontenera */
+  overflow: hidden; /* Ukryjemy zawartość, która wykracza poza kontener */
+  transition: max-height 0.3s ease-in-out; /* Efekt przejścia dla max-height */
+}
+
+/* Gdy .neighbours-container jest widoczny, zmieniamy max-height na auto */
+.neighbours-container {
+  max-height: 500px; /* Dostosuj wartość max-height według potrzeb */
+}
+
+.flag,
+.country-info {
+  max-width: 50rem;
+}
+
+.country-flag {
+  width: 50rem;
+  height: 27rem;
+  object-fit: cover;
+  border: solid 0.5px black;
+  border-radius: 1rem;
+  box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  margin-top: 5rem;
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.country-name {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.country-name-official {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.country_row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+
+.country_row span {
+  font-size: 2rem;
+  width: 10rem;
+  text-align: left;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.neighbours-container,
+.container-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.neighbours-title {
+  text-align: center;
+  font-size: 3.2rem;
+  margin: 1rem;
+}
+.neibhgours-grid {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.neighbours {
+  border: solid 1px black;
+  border-radius: 7px;
+  margin: 0.5rem 0.5rem;
+  text-align: center;
+  box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.neighbour-flag {
+  width: 24rem; /* Stała szerokość flagi sąsiada */
+  height: 13rem; /* Stała wysokość flagi sąsiada */
+  object-fit: cover; /* Dopasowuje flagę do wymiarów */
+
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.neighbour-name {
+  font-size: 2.4rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+.container-button {
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
+
+.container-button input,
+.container-button option,
+.container-button select {
+  font-size: 2.4rem;
+  font: inherit;
+}
+
+.container-button input {
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+
+/* button https://uiverse.io/Pradeepsaranbishnoi/slimy-warthog-37*/
+
+:focus {
+  outline: 0;
+  border-color: #2260ff;
+  box-shadow: 0 0 0 4px #b5c9fc;
+}
+
+.mydict div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.mydict input[type="radio"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.mydict input[type="radio"]:checked + span {
+  box-shadow: 0 0 0 0.0625em #a4abab;
+  background-color: #ecf5f5;
+  z-index: 1;
+  color: #5e6262;
+}
+
+label span {
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.375em 0.75em;
+  position: relative;
+  margin-left: 0.0625em;
+  box-shadow: 0 0 0 0.0625em #b5bfd9;
+  letter-spacing: 0.05em;
+  color: #3e4963;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+label:first-child span {
+  border-radius: 0.375em 0 0 0.375em;
+}
+
+label:last-child span {
+  border-radius: 0 0.375em 0.375em 0;
+}
+
+/* Reguły dla ekranów o szerokości do 1280px */
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 100%; /* Szerokość kontenera na ekranach o szerokości do 1280px */
+    padding: 2rem; /* Dodatkowe wypełnienie kontenera */
+    box-sizing: border-box; /* Zapobiega dodawaniu paddingu do szerokości */
+  }
+
+  .country-info {
+    padding: 1rem; /* Dodatkowe wypełnienie dla informacji o kraju */
+  }
+
+  .neibhgours-grid {
+    max-width: 100%; /* Maksymalna szerokość kontenera sąsiadów */
+    overflow: auto; /* Dodaje pasek przewijania, jeśli zawartość się nie zmieści */
+    display: flex; /* Ustawia kontener sąsiadów jako flexbox */
+    flex-wrap: nowrap; /* Zapobiega zbijaniu się sąsiadów na nowe linie */
+    gap: 1rem; /* Dodaje odstęp między sąsiadami */
+    justify-content: center; /* Wyśrodkowuje sąsiadów w kontenerze */
+  }
+
+  .neighbours {
+    flex: 0 0 auto; /* Sąsiedzi nie będą się kurczyć ani rozciągać */
+    width: 200px; /* Szerokość jednego sąsiada */
+  }
+
+  .neighbour-flag {
+    max-width: 100%; /* Maksymalna szerokość flagi sąsiada */
+    height: auto; /* Zachowuje proporcje flagi */
+  }
+
+  .neighbour-name {
+    font-size: 1.6rem; /* Rozmiar czcionki dla nazwy sąsiada */
+  }
+}
